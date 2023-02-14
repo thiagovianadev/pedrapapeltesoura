@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra Papel Tesoura</title>
+    <link rel="stylesheet" href="estilos/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>VAMOS JOGAR?</h1>
+    </header>
+    <main>
+        <div class="player" onclick="aaa()">
+            <div class="elemento pl pedra" id="pedra" onclick="cliquepd()">
+                <img src="imagens/pedra.png" alt="">
+            </div>
+            <div class="elemento pl papel" id="papel" onclick="cliquepp()">
+                <img src="imagens/paper.png" alt="">
+            </div>
+            <div class="elemento pl tesoura" id="tesoura" onclick="cliquets()">
+                <img src="imagens/scissor.png" alt="">
+            </div>
+        </div>
+        <div class="resultado">
+            <div class="escolha $player" id="resulplay"></div>
+            <p id="resultado">x</p>
+            <div class="escolha $oponente" id="resulcomp"></div>
+        </div>
+        <div class="oponente">
+            <div class="elemento  pedra">
+                <img src="imagens/pedra.png" alt="">
+            </div>
+            <div class="elemento papel">
+                <img src="imagens/paper.png" alt="">
+            </div>
+            <div class="elemento tesoura">
+                <img src="imagens/scissor.png" alt="">
+            </div>
+        </div>
+    </main>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>

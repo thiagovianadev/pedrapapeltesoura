@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+  @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=VT323&display=swap');
+
+:root{
+    --color_1: #90B53A;
+    --color_d: #3b5009;
+    --color_2: #c5ff3dd7;
+    --color_3: #5691ffad;
+    --color_4: #FF573B;
+    --color_5: #2b5bb3bb;
+    --color_6: #abdef3;
+    --minefont: 'VT323', monospace;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--minefont);
+    box-sizing: border-box;
+}
+html body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #abdef3;
+    background-image: url("../imagens/minebackground.jpg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient();
+}    
+header>h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 45px;
+    padding: 20px 20px 0px 20px;
+}
+.player, .oponente, .resultado{
+    background-color: var(--color_5);
+    height: 500px;
+    width: 450px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.elemento, .escolha{
+    background-color: var(--color_2);
+    height: 100px;
+    width: 350px;
+    margin: 25px;
+    border-radius: 20px;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+.resultado{
+    text-align: center;
+    font-size: 100px;
+    cursor: not-allowed;
+}
+img{
+    box-sizing: border-box;
+    height: 80px;
+    padding: 5px;
+    margin: 5px;
+}
+.elemento:hover{
+    background-color: var(--color_1);
+    border: 3px solid var(--color_2);
+}
